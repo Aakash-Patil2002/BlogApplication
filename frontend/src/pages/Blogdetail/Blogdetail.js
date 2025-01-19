@@ -10,7 +10,7 @@ function Blogdetail() {
   const { id } = useParams();
   useEffect(() => {
     axios
-      .get(`http://localhost:5001/getDetails/${id}`)
+      .get(`https://blogapplication-backend-ys6w.onrender.com/getDetails/${id}`)
       .then((success) => {
         setblog(success.data.blog);
       })
