@@ -35,7 +35,7 @@ const BlogForm = ({newblog,setNewblog}) => {
     data.append('category',category);
     data.append('tags',tags);
     data.append('image',image);
-    axios.post("http://localhost:5001/addblog",data,{
+    axios.post("https://blogapplication-backend-ys6w.onrender.com/addblog",data,{
       headers:{
         'Content-Type': 'multipart/form-data',
       }
