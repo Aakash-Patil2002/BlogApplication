@@ -33,7 +33,7 @@ function Auth({ isLogin }) {
       setPassError(false);
       setAllError(false);
       axios
-        .post("http://localhost:5001/login", {
+        .post("https://blogapplication-backend-ys6w.onrender.com/login", {
           email: email.current.value,
           password: password.current.value,
         })
@@ -87,7 +87,7 @@ function Auth({ isLogin }) {
       setUserError(false);
       setAllError(false);
       axios
-        .post("http://localhost:5001/register", {
+        .post("https://blogapplication-backend-ys6w.onrender.com/register", {
           username: username.current.value,
           email: email.current.value,
           password: password.current.value,
