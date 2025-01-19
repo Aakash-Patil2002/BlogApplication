@@ -9,7 +9,7 @@ import Footer from '../../components/Footer/Footer';
 function Home() {
   const [allBlogs,setAllBlogs]=useState('');
   useEffect(()=>{
-   axios.get('http://localhost:5001/').then((allBlogs)=>{
+   axios.get('https://blogapplication-backend-ys6w.onrender.com').then((allBlogs)=>{
     setAllBlogs(allBlogs.data.blogs);
   
    }).catch((error)=>{
