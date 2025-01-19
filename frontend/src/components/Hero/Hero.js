@@ -14,7 +14,7 @@ function Hero() {
   const [sidebar, setSidebar] = useState("");
   useEffect(() => {
     axios
-      .get("http://localhost:5001/")
+      .get("https://blogapplication-backend-ys6w.onrender.com")
       .then((success) => {
         const left = success.data.blogs.filter((blog) => {
           return blog.tags === "left";
