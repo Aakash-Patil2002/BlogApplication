@@ -14,7 +14,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get(`http://localhost:5001/myblogs/${token}`)
+      .get(`https://blogapplication-backend-ys6w.onrender.com/myblogs/${token}`)
       .then((response) => {
         if (response) {
           setMyblogs(response.data.myblogs);
@@ -32,7 +32,7 @@ function Profile() {
   const deleteBlog=(blogId)=>{
     if(window.confirm("Are you sure to delete")){
 
-      axios.get(`http://localhost:5001/deleteblog/${blogId}`).then((success)=>{
+      axios.get(`https://blogapplication-backend-ys6w.onrender.com/deleteblog/${blogId}`).then((success)=>{
         if(success){
           alert(success.data.msg);
           setDelblog(!delblog);
