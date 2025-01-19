@@ -7,7 +7,7 @@ exports.addblog = (req, res) => {
   const { title, content, category, tags } = req.body;
   const image=req.file.path.replace("\\",'/');
 
-  const imgUrl=`http://localhost:5001/${image}`;
+  const imgUrl=`https://blogapplication-backend-ys6w.onrender.com/${image}`;
  
   const newBlog = new Blog({
     title,
