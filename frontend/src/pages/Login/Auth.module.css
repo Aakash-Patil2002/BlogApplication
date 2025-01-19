@@ -1,0 +1,80 @@
+:root{
+    --color1:#080808;
+}
+.authbody{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.authForm{
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
+.authTitle{
+    align-items: center;
+    margin-bottom: 15px;
+}
+.authTitle h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+
+}
+.authTitle img{
+    width: 100px;
+}
+.inputItem{
+
+}
+.input{
+    width: 100%;
+    font-weight: 400;
+    padding: 7px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color1);
+}
+
+.error{
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+.vhide{
+    visibility: hidden;
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+.vshow{
+    visibility: visible;
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+.authBtn{
+    padding: 0 50px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1;
+    background-color: var(--color1);
+    height: 40px;
+    border: none;
+}
+
+
+@media (min-width:576px){
+    .authTitle{
+        display: flex;
+        justify-content: space-between;
+    }
+}

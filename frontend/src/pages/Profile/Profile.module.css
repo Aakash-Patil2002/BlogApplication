@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color2:#48C4DC;
+    --color3:#555555;
+    --font1:"Work Sans", serif;
+    --font2:"Open Sans", serif;
+}
+
+.profile{
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+.myblog_heading{
+    font-size: 30px;
+    font-weight: 700;
+}
+.blogImg{
+    width: 100%;
+   
+}
+.figure{
+    background-color: #fff;
+}
+.figure figcaption{
+    padding: 20px;
+}
+.catgory{
+    color: var(--color2);
+    text-decoration: none;
+    font-family: var(--font2);
+    font-size: 15px;
+}
+.title{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font1);
+  padding-left: 15px;
+  border-left: 3px solid var(--color2);
+}
+.post_snippet{
+  font-size: 15px;
+  text-align: justify;
+  color: var(--color3);
+  border-bottom: 1px solid #dad6d6;
+  padding-bottom: 20px;
+}
+.readMore{
+    display: flex;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #555555;
+    font-weight: 400;
+    border: 1px solid var(--color3);
+}
+
+
+.form{
+    padding:40px 65px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+.form h4{
+    margin-bottom: 0px;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #080808;
+    margin-bottom: 6px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.form_inp{
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    color: #111;
+    border-bottom: 1px solid #080808;
+    text-align: center;
+    outline: none;
+}
+.form_inp::placeholder{
+    color: #080808;
+}
+.form_para{
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 1.2;
+    
+    color: var(--color3);
+
+}
+.form_para strong{
+    color: #080808;
+    font-weight: 700;
+    cursor: pointer;
+}
+.right_section{
+    position: sticky;
+    top: 50px;
+}
+
+@media(min-width:576px){
+    .blogImg{
+        aspect-ratio: 1/.4;
+    }
+}
